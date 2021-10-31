@@ -1,0 +1,43 @@
+
+<ion-tab-bar slot="bottom"  mode="ios" id="tab-bar">
+  <div id="home" class="button-tab button-tab-1" id="tabs-text"  mode="ios">
+    <ion-tab-button tab="home"  class="tab-button" (click)="onClickTab1()">
+      <ion-label class="label-tab label-tab-active" id="label-tab-1" width="100px">
+        Home
+      </ion-label>
+    </ion-tab-button>
+  </div>
+
+  <div id="medicion" class="button-tab button-tab-2"  >
+    <ion-tab-button tab="gallery"  class="tab-button tab-active" (click)="onClickTab2()">
+      <ion-label class="label-tab text-margin-2" id="label-tab-2">
+        Gallery
+      </ion-label>
+    </ion-tab-button>
+  </div>
+  
+  <div id="account" class="button-tab button-tab-3"  >
+    <ion-tab-button tab="config"  class="tab-button" (click)="onClickTab3()">
+      <ion-label class="label-tab text-margin-3" id="label-tab-3">
+        Bio
+      </ion-label>
+    </ion-tab-button>
+  </div>
+</ion-tab-bar>
+
+<div class="tab-content" id="tab-content">
+  <div class="circle circle-tab-1-1" id="circle"></div>
+  <div class="tab-bar"></div>
+  <div  class="div-tab-button-1" color="tranparent">
+    <img id="icon-tab-button-1" class="icon-tab icon-hidden" src="assets/icon/home1.png" width="25px">
+    <ion-icon id="icon-tab-button-1-aux" class="icon-tab icon-tab-active" src="assets/icon/home11.svg"></ion-icon>
+  </div>
+  <div class="div-tab-button-2" color="tranparent">
+    <img id="icon-tab-button-2" class="icon-tab" src="assets/icon/reloj2.png" width="15px">
+    <ion-icon id="icon-tab-button-2-aux" class="icon-tab icon-hidden" src="assets/icon/reloj1.svg"></ion-icon>
+  </div>
+  <div class="div-tab-button-3" color="tranparent">
+    <img id="icon-tab-button-3" class="icon-tab" src="assets/icon/bluetooth1.png" width="15px">
+    <ion-icon id="icon-tab-button-3-aux" class="icon-tab icon-hidden" src="assets/icon/bluetooth2.svg"></ion-icon>
+  </div>
+</div>
