@@ -8,14 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ListDetailDateComponent implements OnInit {
 
   @Input() disabled:boolean;
-  @Input() magnitudVariable:any;
-  @Input() unidadesVariable:any;
-  @Input() icono:any;
+  @Input() titleCard:any;
+  @Input() subTitleCard:any;
   @Input() diaFechaToma:any;
   @Input() mesFechaToma:any;
   @Input() hourFechaToma:any;
+  @Input() icono:any;
   @Input() valueWidthSubCard:any="120px";
-  @Input() fontTime:any="16pt";
+  @Input() fontTime:any="15pt";
   // @Input() ngFor:any = "";
   
   constructor() { }

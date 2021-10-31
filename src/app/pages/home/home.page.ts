@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomePage implements OnInit {
   stateItem: any[];
   items:any[] = Array(20)
-  magnitudVariable="2000"
-  unidadesVariable="mmHG"
+  titleCard="2000"
+  subTitleCard="mmHG"
   diaFechaToma="29"
   mesFechaToma="OCT"
   hourFechaToma="11:00:06 PM"
