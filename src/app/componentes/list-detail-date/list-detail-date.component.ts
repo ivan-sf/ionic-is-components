@@ -10,9 +10,9 @@ export class ListDetailDateComponent implements OnInit {
   @Input() disabled:boolean;
   @Input() titleCard:any;
   @Input() subTitleCard:any;
-  @Input() diaFechaToma:any;
-  @Input() mesFechaToma:any;
-  @Input() hourFechaToma:any;
+  @Input() diaFecha:any;
+  @Input() mesFecha:any;
+  @Input() hourFecha:any;
   @Input() icono:any;
   @Input() valueWidthSubCard:any="120px";
   @Input() fontTime:any="15pt";

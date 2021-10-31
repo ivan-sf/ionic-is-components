@@ -5,15 +5,10 @@
 </ion-header>
 
 <ion-content class="ion-padding">   
-  <app-list-detail-date
-    *ngFor="let item of items, let i = index"
-    [disabled]="i === stateItem['0']['id']"
-    (click)="changeStateItem(i)"
-    titleCard="{{titleCard}}"
-    subTitleCard="{{subTitleCard}}"
-    diaFechaToma="{{diaFechaToma}}"
-    mesFechaToma="{{mesFechaToma}}"
-    hourFechaToma="{{hourFechaToma}}"
-    icono="person"
-  ></app-list-detail-date>
+  <ion-list>
+    <ion-item *ngFor="let c of componentes" detail>
+      <ion-icon slot="start" name="{{c.icon}}" color="primary"></ion-icon>
+      <ion-label  (click)="viewPages('list-detail-date-page')">{{c.name}}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+
+interface Componente{
+  icon:string;
+  name:string;
+  redirectTo:string;
+}
 
 @Component({
   selector: 'app-home',
@@ -6,23 +13,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-  stateItem: any[];
-  items:any[] = Array(20)
-  titleCard="2000"
-  subTitleCard="mmHG"
-  diaFechaToma="29"
-  mesFechaToma="OCT"
-  hourFechaToma="11:00:06 PM"
-  constructor() { }
+  componentes:Componente[]=[
+    {
+      icon:'american-football-outline',
+      name:'List Detail Date',
+      redirectTo:'/list-detail-date-page'
+    },
+  ]
+
+  constructor(
+    public navController: NavController,
+  ) { }
 
   ngOnInit() {
-    this.changeStateItem(0)
   }
 
-  changeStateItem(id:any) {
-    this.stateItem = []
-    this.stateItem.push({state : true, id})
-    // console.log(this.stateItem['0']['id'],this.stateItem['0']['state'],this.stateItem)
+  viewPages(page) {
+      this.navController.navigateBack('/' + page + '/view');
   }
   
 }

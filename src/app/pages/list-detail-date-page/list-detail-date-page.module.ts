@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { GalleryPageRoutingModule } from './gallery-routing.module';
+import { ListDetailDatePagePageRoutingModule } from './list-detail-date-page-routing.module';
 
-import { GalleryPage } from './gallery.page';
+import { ListDetailDatePagePage } from './list-detail-date-page.page';
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentesModule } from 'src/app/componentes/componentes.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    GalleryPageRoutingModule,
+    ListDetailDatePagePageRoutingModule,
     ComponentesModule
   ],
-  declarations: [GalleryPage]
+  declarations: [ListDetailDatePagePage]
 })
-export class GalleryPageModule {}
+export class ListDetailDatePagePageModule {}

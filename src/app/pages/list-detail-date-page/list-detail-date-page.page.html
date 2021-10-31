@@ -1,0 +1,16 @@
+<app-header titulo="List Detail Pages"></app-header>
+
+
+<ion-content>
+  <app-list-detail-date
+    *ngFor="let item of items, let i = index"
+    [disabled]="i === stateItem['0']['id']"
+    (click)="changeStateItem(i)"
+    titleCard="{{titleCard}}"
+    subTitleCard="{{subTitleCard}}"
+    diaFecha="{{diaFecha}}"
+    mesFecha="{{mesFecha}}"
+    hourFecha="{{hourFecha}}"
+    icono="person"
+  ></app-list-detail-date>
+</ion-content>

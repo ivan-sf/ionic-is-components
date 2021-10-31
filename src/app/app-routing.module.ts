@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'bio',
     loadChildren: () => import('./pages/bio/bio.module').then( m => m.BioPageModule)
   },
+  {
+    path: 'list-detail-date-page',
+    loadChildren: () => import('./pages/list-detail-date-page/list-detail-date-page.module').then( m => m.ListDetailDatePagePageModule)
+  }
 ];
 
 @NgModule({

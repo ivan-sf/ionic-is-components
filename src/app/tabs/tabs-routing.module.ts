@@ -6,6 +6,7 @@ import { ConfigPageModule } from '../pages/config/config.module';
 import { GalleryPageModule } from '../pages/gallery/gallery.module';
 
 import { TabsPage } from './tabs.page';
+import { ListDetailDatePagePageModule } from '../pages/list-detail-date-page/list-detail-date-page.module';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
       {
         path:'config',
         loadChildren:()=>import('../pages/config/config.module').then(m=>ConfigPageModule)
+      },
+      {
+        path:'list-detail-date-page',
+        loadChildren:()=>import('../pages/list-detail-date-page/list-detail-date-page.module').then(m=>ListDetailDatePagePageModule)
       }
     ]
   }
