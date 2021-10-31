@@ -1,11 +1,9 @@
 
 .item-historial{
     position: relative;
-    left: calc(12.5% - 30px);
     filter: grayscale(.7);
     background: linear-gradient(0deg, var(--ion-color-menu-purple-03) 0%, var(--ion-color-menu-gray-05) 100%);
     opacity: .5;
-    margin: 1%;
     border-radius: 5px;
     width: 90%;
     transition: .5s;
@@ -13,6 +11,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 0;
+    right: 0;
+    margin: 3% auto;
 }
 .content-time{
     width: 35vw; 
@@ -57,6 +58,13 @@
 .sub-card-historial img{
     filter: grayscale(1);
 }
+
+ion-icon{
+    position: absolute;
+    right: 10px;
+    font-size:13pt;
+}
+
 .item-disabled {
     filter: grayscale(0);
     .sub-card-historial p{
@@ -68,6 +76,9 @@
     .content-time{
         transform:scale(1);
     }
+    ion-icon{
+        font-size:15pt;
+    }
     opacity: 1;
     width: 98%;
     position: relative;
@@ -75,11 +86,7 @@
 }
 
 
-ion-icon{
-    position: absolute;
-    right: 10px;
-    font-size:15pt;
-}
+
 
 .item-2{
     width: 180px; 
