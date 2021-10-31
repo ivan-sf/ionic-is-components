@@ -88,19 +88,36 @@ ion-icon{
     justify-content: center; 
     align-items: center;  
     color: var(--ion-color-home-monitoreo);
-    font-size: 13pt; 
+    font-size: 12pt; 
     font-weight: 400; 
     padding-right:15px;
 }
 
 @media only screen and (max-width: 375px) {
     .item-2{
-        font-size: 12pt; 
+        font-size: 11pt; 
     }
 }
 
 @media only screen and (max-width: 350px) {
     .item-2{
         font-size: 9pt; 
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .item-2{
+        font-size: 8pt; 
+    }
+    .item-1{
+        transform: scale(.8);
+    }
+    .sub-card-historial{
+        transform: scale(.8);
+    }
+    .item-disabled {
+        .item-1{
+            transform: scale(.8);
+        }
     }
 }
