@@ -3,6 +3,47 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  
+  *{
+    font-family: 'Roboto', sans-serif;
+  }
+  --ion-color-background: #f7f7f7;
+  
+  --ion-color-menu-background: #ffffff;
+  --ion-color-home-text: #8A8B8D;
+  --ion-color-home-monitoreo: #525252;
+  
+  --ion-color-menu-gray-05: #c4c4c44d;
+
+  --ion-color-menu-blue: #29C1E1;
+  --ion-color-menu-blue-03: #29c2e152;
+  --ion-color-menu-blue-05: #29c2e18a;
+  --ion-color-menu-blue-rgb: 41,193,225;
+  --ion-color-menu-blue-contrast: #000000;
+  --ion-color-menu-blue-contrast-rgb: 0,0,0;
+  --ion-color-menu-blue-shade: #24aac6;
+  --ion-color-menu-blue-tint: #3ec7e4;
+
+  --ion-color-menu-purple: #9966ff;
+  --ion-color-menu-purple-2: #cbb1fd;
+  --ion-color-menu-purple-05: #9966ff8a;
+  --ion-color-menu-purple-03: #9966ff28;
+  --ion-color-menu-purple-primary: #875ae0;
+  --ion-color-menu-purple-rgb: 153,102,255;
+  --ion-color-menu-purple-contrast: #ffffff;
+  --ion-color-menu-purple-contrast-rgb: 0,0,0;
+  --ion-color-menu-purple-shade: #875ae0;
+  --ion-color-menu-purple-tint: #a375ff;
+
+
+//Icons
+  --ion-color-icon-gray: #c4c4c4;
+  --ion-color-icon-dark: #44555D;
+
+  
+  --ion-font-family: 'Roboto-Bold';
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -234,3 +275,5 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');

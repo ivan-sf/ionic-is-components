@@ -1,0 +1,106 @@
+
+.item-historial{
+    position: relative;
+    left: calc(12.5% - 30px);
+    filter: grayscale(.7);
+    background: linear-gradient(0deg, var(--ion-color-menu-purple-03) 0%, var(--ion-color-menu-gray-05) 100%);
+    opacity: .5;
+    margin: 1%;
+    border-radius: 5px;
+    width: 90%;
+    transition: .5s;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-time{
+    width: 35vw; 
+    height: 50px; 
+    display: flex; 
+    justify-content: center; 
+    margin: auto; 
+    align-items: center; 
+    padding: 0;
+    transform:scale(.8);
+}
+.sub-card-historial{
+    text-align: center;
+    // width: 120px; 
+    margin: 0;
+    height: 75%;
+    min-width: var(--valueWidthSubCard);
+    display: flex;
+    justify-content: center;
+}
+
+.sub-card-historial p{
+    font-size: 10pt;
+    filter: grayscale(1);
+    background: -webkit-linear-gradient(-270deg, var(--ion-color-menu-purple) 0%, var(--ion-color-menu-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 7px;
+    bottom: 0;
+    margin: auto;
+    font-weight: 500;
+}
+
+.sub-card-historial span{
+    font-size: var(--font-size);
+    font-weight: 600;
+}
+.icon-grayscale{
+    filter: grayscale(0);
+}
+.sub-card-historial img{
+    filter: grayscale(1);
+}
+.item-disabled {
+    filter: grayscale(0);
+    .sub-card-historial p{
+        filter: grayscale(0);
+    }
+    .icon-grayscale{
+        filter: grayscale(0);
+    }
+    .content-time{
+        transform:scale(1);
+    }
+    opacity: 1;
+    width: 98%;
+    position: relative;
+    left: 0%;
+}
+
+
+ion-icon{
+    position: absolute;
+    right: 10px;
+    font-size:15pt;
+}
+
+.item-2{
+    width: 180px; 
+    height: 60px;   
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+    color: var(--ion-color-home-monitoreo);
+    font-size: 13pt; 
+    font-weight: 400; 
+    padding-right:15px;
+}
+
+@media only screen and (max-width: 375px) {
+    .item-2{
+        font-size: 12pt; 
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .item-2{
+        font-size: 9pt; 
+    }
+}

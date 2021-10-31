@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TabComponent } from './tab/tab.component';
+import { ListDetailDateComponent } from './list-detail-date/list-detail-date.component';
 
 
 
 @NgModule({
   declarations: [
-    TabComponent
+    TabComponent,
+    ListDetailDateComponent
   ],
   exports:[
-    TabComponent
+    TabComponent,
+    ListDetailDateComponent
   ],
   imports: [
     CommonModule

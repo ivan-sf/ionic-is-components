@@ -4,6 +4,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">   
+  <app-list-detail-date
+    *ngFor="let item of items, let i = index"
+    [disabled]="i === stateItem['0']['id']"
+    (click)="changeStateItem(i)"
+    magnitudVariable="{{magnitudVariable}}"
+    unidadesVariable="{{unidadesVariable}}"
+    diaFechaToma="{{diaFechaToma}}"
+    mesFechaToma="{{mesFechaToma}}"
+    hourFechaToma="{{hourFechaToma}}"
+    icono="person"
+  ></app-list-detail-date>
 </ion-content>
