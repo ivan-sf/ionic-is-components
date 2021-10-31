@@ -7,6 +7,7 @@ import { GalleryPageModule } from '../pages/gallery/gallery.module';
 
 import { TabsPage } from './tabs.page';
 import { ListDetailDatePagePageModule } from '../pages/list-detail-date-page/list-detail-date-page.module';
+import { SemiDonutPagePageModule } from '../pages/semi-donut-page/semi-donut-page.module';
 
 const routes: Routes = [
   {
@@ -37,7 +38,11 @@ const routes: Routes = [
       {
         path:'list-detail-date-page',
         loadChildren:()=>import('../pages/list-detail-date-page/list-detail-date-page.module').then(m=>ListDetailDatePagePageModule)
-      }
+      },
+      {
+        path:'semi-donut',
+        loadChildren:()=>import('../pages/semi-donut-page/semi-donut-page.module').then(m=>SemiDonutPagePageModule)
+      },
     ]
   }
 ];

@@ -8,7 +8,7 @@
   <ion-list>
     <ion-item *ngFor="let c of componentes" detail>
       <ion-icon slot="start" name="{{c.icon}}" color="primary"></ion-icon>
-      <ion-label  (click)="viewPages('list-detail-date-page')">{{c.name}}</ion-label>
+      <ion-label  (click)="viewPages(c.redirectTo)">{{c.name}}</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>

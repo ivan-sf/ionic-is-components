@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TabComponent } from './tab/tab.component';
 import { ListDetailDateComponent } from './list-detail-date/list-detail-date.component';
 import { HeaderComponent } from './header/header.component';
+import { SemiDonutComponent } from './semi-donut/semi-donut.component';
 
 
 
@@ -10,12 +11,14 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     TabComponent,
     ListDetailDateComponent,
-    HeaderComponent
+    HeaderComponent,
+    SemiDonutComponent
   ],
   exports:[
     TabComponent,
     ListDetailDateComponent,
-    HeaderComponent
+    HeaderComponent,
+    SemiDonutComponent
   ],
   imports: [
     CommonModule

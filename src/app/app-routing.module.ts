@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'list-detail-date-page',
     loadChildren: () => import('./pages/list-detail-date-page/list-detail-date-page.module').then( m => m.ListDetailDatePagePageModule)
+  },
+  {
+    path: 'semi-donut-page',
+    loadChildren: () => import('./pages/semi-donut-page/semi-donut-page.module').then( m => m.SemiDonutPagePageModule)
   }
 ];
 

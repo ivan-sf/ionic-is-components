@@ -15,9 +15,14 @@ interface Componente{
 export class HomePage implements OnInit {
   componentes:Componente[]=[
     {
-      icon:'american-football-outline',
+      icon:'american-football',
       name:'List Detail Date',
       redirectTo:'/list-detail-date-page'
+    },
+    {
+      icon:'pie-chart',
+      name:'Semi Donut',
+      redirectTo:'/semi-donut'
     },
   ]
 
@@ -29,6 +34,7 @@ export class HomePage implements OnInit {
   }
 
   viewPages(page) {
+    // console.log(page)
       this.navController.navigateBack('/' + page + '/view');
   }
   
